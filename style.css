@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: #faf7f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.9;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.signature {
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ff6b6b;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.secret {
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  color: #ff6b6b;
+}
