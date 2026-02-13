@@ -16,9 +16,10 @@ body {
 }
 
 input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin: 15px 0;
+  direction: rtl;
 }
 
 button {
@@ -33,8 +34,22 @@ button {
 .error {
   color: red;
   margin-top: 10px;
+  direction: rtl;
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
 }
 
 .hidden {
   display: none;
+}
+
+.success-title {
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.message {
+  white-space: pre-wrap; /* IMPORTANT for new lines */
+  line-height: 1.9;
+  direction: rtl;
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
 }

@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
-  <meta charset="UTF-8">
-  <title>For her</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>🩷</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
 
-<main class="card">
-  <h2>A small question...</h2>
-  <p>انه مونو ....؟</p>
+    <main class="card">
 
-  <input id="answer"  placeholder="Type here..." />
-  <button onclick="unlock()">Check it</button>
+        <div id="lock-view">
+            <h2>A small question...</h2>
+            <p class="message">انه مونو ....؟</p>
 
-  <p id="error" class="error"></p>
+            <input class="input" id="answer" placeholder="اینجا بنویس خانومک..." />
+            <button onclick="unlock()">بازش کن</button>
 
-  <div id="content" class="hidden">
-    <p id="message"></p>
-    <audio id="voice" controls></audio>
-  </div>
-</main>
+            <p id="error" class="error"></p>
+        </div>
 
-<script src="crypto.js"></script>
+        <div id="unlock-view" class="hidden">
+            <h2 class="success-title">🎉 Congrats!</h2>
+            <p id="message" class="message"></p>
+        </div>
+
+    </main>
+
+    <script src="crypto.js"></script>
 </body>
+
 </html>
